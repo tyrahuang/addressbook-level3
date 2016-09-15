@@ -45,9 +45,11 @@ Priority | As a ... | I want to ... | So that I can...
 `* * *` | user | add a new person |
 `* * *` | user | delete a person | remove entries that I no longer need
 `* * *` | user | find a person by name | locate details of persons without having to go through the entire list
+`* *` | user | find a person by number | locate details of persons using their phone number
 `* *` | user | hide [private contact details](#private-contact-detail) by default | minimize chance of someone else seeing them by accident
 `*` | user with many persons in the address book | sort persons by name | locate a person easily
-
+`*` | user with many persons in the address book | sort persons by tags | locate a person easily
+`*` | user with many persons in the address book | favourite a person | locate a person easily
 
 ## Appendix B : Use Cases
 
@@ -62,6 +64,7 @@ Priority | As a ... | I want to ... | So that I can...
 3. User requests to delete a specific person in the list
 4. AddressBook deletes the person <br>
 Use case ends.
+5. Renaming of a Tag
 
 **Extensions**
 
@@ -73,13 +76,19 @@ Use case ends.
 
 > 3a1. AddressBook shows an error message <br>
   Use case resumes at step 2
-
+  
+5a. The Tag name already exist
+ 
+> Use case ends
+ 
+ 
 ## Appendix C : Non Functional Requirements
 
 1. Should work on any [mainstream OS](#mainstream-os) as long as it has Java 8 or higher installed.
 2. Should be able to hold up to 1000 persons.
 3. Should come with automated unit tests and open source code.
 4. Should favor DOS style commands over Unix-style commands.
+5. Should be able to change all the previous Tag names into the new one.
 
 ## Appendix D : Glossary
 
